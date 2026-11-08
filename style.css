@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.avatar {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+flex-direction: column;
+}
+
+a {
+text-decoration: none;
+color: darkblue;
+font-weight: bold;
+}
+
+/* Отступы для секций, чтобы текст не слипался */
+section {
+    margin-bottom: 30px;
+}
+
+/* Стили для подписей (label), чтобы они стояли над полями */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Стили для полей ввода и текстового поля */
+input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Стили для кнопки */
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Немного отодвинем списки, чтобы точки не прилипали к краю */
+ul, ol {
+    margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+    /* Уменьшаем отступы, чтобы было больше места */
+    body {
+        padding: 10px;
+    }
+
+    /* Делаем заголовки поменьше, чтобы они влезали в экран */
+    h1, h2 {
+        font-size: 24px;
+        word-wrap: break-word; /* Это свойство заставляет длинные слова переноситься на новую строку */
+    }
+
+    /* Картинка будет занимать всю ширину экрана */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Поля формы тоже растянем на всю ширину */
+    input, textarea, button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
